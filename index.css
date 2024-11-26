@@ -1,0 +1,21 @@
+.two-column-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin: 20px;
+}
+
+.column {
+    flex: 3;
+    padding: 20px;
+}
+
+.image-column img {
+    width: 100%;
+    height: auto; /* Ensure image scales correctly */
+}
+
+@media (max-width: 800px) {
+    .two-column-container {
+        flex-direction: column;
+    }
+}
